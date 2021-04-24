@@ -10,6 +10,13 @@ let commentWidget = (function(){
         onChangeInput: function(e){
             console.log(e);
         },
+        handleReplySubmit: function(index){
+            let replies = comments[index].replies || [];
+            const replyInput = document.getElementById("reply-input").value;
+            let id = replies.length + 1;
+            replies.push({id, reply: replyInput});
+            comments[index].comments;
+        },
         handleSubmitButton: function(reRender){
             const commentInput = document.getElementById("comment-input").value;
             if(commentInput.trim().length !== 0){
@@ -30,7 +37,12 @@ let commentWidget = (function(){
                                     <button class='edit-button' onclick=''>Edit</button>
                                     <button class='reply-button' onclick='commentWidget.handleReplyWidget(${index})'>Reply</button>
                                 </div>
-                                ${showReplyForComment === index?'<input />':''}
+                                ${showReplyForComment === index ?`
+                                <div class="reply-container">
+                                    <input class= "reply-input" id="reply-input" value="" />
+                                    <button onclick="commentWidget.handleReplySubmit(${index})">Submit</button>
+                                </div>
+                                `:''}
                             </div>
                         `
                     )
