@@ -1,0 +1,23 @@
+{
+  "name": "comment-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saket23/comment-widget-vanillajs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saket23/comment-widget-vanillajs/issues"
+  },
+  "homepage": "https://github.com/Saket23/comment-widget-vanillajs#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

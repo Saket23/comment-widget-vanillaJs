@@ -1,0 +1,27 @@
+.widget-container {
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.372);
+    margin: 20px auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-box {
+    width: 50%;
+}
+
+.comment-list {
+    margin-top: 40px;
+}
+
+.single-comment-container {
+    border: 1px solid rgba(0, 0, 0, 0.372);
+    padding: 20px;
+}
+
+.button-container {
+    
+}
